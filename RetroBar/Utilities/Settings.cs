@@ -291,6 +291,34 @@ namespace RetroBar.Utilities
             set => SetEnum(ref _edge, value);
         }
 
+        private int _rowCount = 1;
+        public int RowCount
+        {
+            get => _rowCount;
+            set => Set(ref _rowCount, value);
+        }
+
+        private int _rowLimit = 5;
+        public int RowLimit
+        {
+            get => _rowLimit;
+            set => Set(ref _rowLimit, value);
+        }
+
+        private int _taskbarWidth = 1;
+        public int TaskbarWidth
+        {
+            get => _taskbarWidth;
+            set => Set(ref _taskbarWidth, value);
+        }
+
+        private int _taskbarWidthLimit = 7;
+        public int TaskbarWidthLimit
+        {
+            get => _taskbarWidthLimit;
+            set => Set(ref _taskbarWidthLimit, value);
+        }
+
         private List<string> _quickLaunchOrder = [];
         public List<string> QuickLaunchOrder
         {
